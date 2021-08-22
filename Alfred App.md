@@ -1,0 +1,3 @@
+# Alfred App
+[[Snippets]]
+[[Bookmarks]]
