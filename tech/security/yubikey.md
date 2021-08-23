@@ -1,6 +1,6 @@
 # Yubikey
 * YubiKey 5 NFC
-* [[Password Mgr]]Password Mgr]]
+* Have a password manager like LastPass 
 * Secure Gmail 
   1. email & pwd
   2. yubikey in USB A

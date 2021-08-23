@@ -13,11 +13,10 @@
 ### Useful homebrew packages
 * Checkout my [dotfiles](https://github.com/kingluddite/dotfiles/blob/master/Brewfile)
 * tree
-* [Taskwarrior](./homebrew/task.md)
+* [Taskwarrior](./macos/homebrew/task.md)
 
 ### Productivity
-[Alfred App](./macos/productivity/alfred-app.md)
-[Mac2imgur](./macos/productivity/mac2imgur.md)
-<a href="https://keep.google.com/" target="_blank">Google Keep</a> 
-Spectacle - Deprecated - I use [Rectangle](./macos/productivity/rectangle.md)
-[Rectangle](./macos/productivity/rectangle.md)
+* [Alfred App](./macos/productivity/alfred-app.md)
+* [Mac2imgur](./macos/productivity/mac2imgur.md)
+* <a href="https://keep.google.com/" target="_blank">Google Keep</a> 
+

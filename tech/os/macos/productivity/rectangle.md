@@ -9,3 +9,4 @@
 * Bottom left quarter <kbd>cmd</kbd> + <kbd>cntl</kbd> + <kbd>alt</kbd> + <kbd>;</kbd>
 * Full screen <kbd>cmd</kbd> + <kbd>cntl</kbd> + <kbd>alt</kbd> + <kbd>space</kbd>
 * Next Screen (I use multiple monitors) <kbd>cmd</kbd> + <kbd>cntl</kbd> + <kbd>alt</kbd> + <kbd>p</kbd>
+

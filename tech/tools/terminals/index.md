@@ -6,4 +6,4 @@
     + grep
     + list
     + clear terminal
-* [Shells](/tech/terminals/shells/index.md)
+* [iTerm2](./iterm2.md)

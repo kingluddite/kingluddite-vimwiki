@@ -1,3 +1,0 @@
-# Window Management
-[[Rectangle]]
-[[Spectacle]]

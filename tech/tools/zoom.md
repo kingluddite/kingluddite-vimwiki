@@ -1,3 +1,4 @@
+# Zoom
 ## Zoom Settings
 * In web client - Turn on:
   * **note** There is a difference between cloud and desktop (the cloud settings have far more options)

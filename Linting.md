@@ -1,3 +1,0 @@
-# Linting
-[[ESlint]]
-[[StyleLint]]

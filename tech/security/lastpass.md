@@ -28,7 +28,6 @@
 * **Note** trying to set passwords directly from a site most of the time doesn't work right so best to 
   create password like above
   
-  
 ## Entering a password for an app
 * Go to the app you want to create or log into
 * Copy the Password from the LP vault (also enter username/email)

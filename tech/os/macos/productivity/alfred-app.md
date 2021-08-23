@@ -22,6 +22,12 @@
 ## Snippets
 * If you are typing the same stuff over and over use snippets. I used <a href="https://textexpander.com/" target="_blank">TextExpander</a>  but their upgrades and asking for more money bothered me so I switched to Alfred App and never looked back.
 
+### Some snippets I use
+#### Gatsby Stuff
+- `!gat` - http://localhost:8000 (run Gatsby Local server)
+- `!san` - http://localhost:3333 (run Sanity local server)
+- `!pg` - http://localhost:8000/___graphql (run GraphQL Playground Local server (aka GraphiQL))
+
 ### Example snippets
 * If I add markdown that shows a fragment of JavaScript I add this snippet that is triggered by typing the Keyword `!!jsa`
 

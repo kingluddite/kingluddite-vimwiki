@@ -1,0 +1,3 @@
+# Linting
+eslint
+stylelint

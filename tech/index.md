@@ -14,14 +14,16 @@ databases
 build tools
 hosting
 WordPress
-eslint
-typescript
+[linting](./tools/linting/index.md)
+[typescript](./tools/typescript.md)
 Twitter Bootstrap
 security
 productivity
+[prettier](./tools/prettier.md)
+[zoom](./tools/zoom.md)
 
 ## OS
-[mac](./os/mac.md)
+[mac](./os/index.md)
 windows
 linux
 
@@ -32,3 +34,13 @@ JavaScript
 SQL
 Markdown
 Lua
+
+## Security
+[[Okta]]
+[[SSH]]
+[[HTTPS]]
+[[DNS]]
+[Yubikey](./security/yubikey.md)
+[[Password Mgr]]
+[LastPass](./security/lastpass.md)
+
