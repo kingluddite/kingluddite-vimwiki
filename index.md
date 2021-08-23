@@ -1,7 +1,7 @@
 # Vimwicki
-
-# Tech
 [tech](/tech/index.md)
+[schools](./school.md)
+
 
 
 [[Sublime](Sublime.md) Text]
@@ -29,5 +29,4 @@
 [[Iterm2]]
 [[WordPress]]
 [[Markdown]]
-[School](School.md)
 
