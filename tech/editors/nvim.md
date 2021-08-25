@@ -16,10 +16,17 @@
 
 * TODO - find where this settings is in dotfiles
 
+## Searching
+| key binding | action                                                                        | note |
+|-------------|-------------------------------------------------------------------------------|------|
+| `:noh`      | Turn off highlighting until next search                                       |      |
+| `vg_`       | visual select to the end of the line excluding any whitespace and the newline |      |
+
 ## Editing
-| key binding | action                      | note |
-|-------------|-----------------------------|------|
-| `d0`        | delete to beginning of line |      |
+| key binding | action                                                                        | note |
+|-------------|-------------------------------------------------------------------------------|------|
+| `d0`        | delete to beginning of line                                                   |      |
+| `vg_`       | visual select to the end of the line excluding any whitespace and the newline |      |
 
 ## Buffers
 | key binding | action                  | note |

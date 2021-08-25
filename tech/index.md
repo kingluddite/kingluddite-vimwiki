@@ -22,6 +22,10 @@ productivity
 [prettier](./tools/prettier.md)
 [zoom](./tools/zoom.md)
 
+## Shells
+[zsh](./shells/zsh.md)
+[my favorite terminal commands](./shells/my-favorite-terminal-commands.md) 
+
 ## OS
 [mac](./os/index.md)
 windows

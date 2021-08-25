@@ -1,4 +1,6 @@
 # My Favorite Terminal Commands
 
-## Create and open the file you just created
-`$ touch .gitignore && open $_`
+| key binding                     | action                                    | notes |
+|---------------------------------|-------------------------------------------|-------|
+| `$ touch .gitignore && open $_` | create and open the file you just created |       |
+| `$ pwd`                         | present working directory                 |       |
