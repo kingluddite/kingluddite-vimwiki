@@ -210,6 +210,11 @@ plugins=(zsh-autosuggestions)`
 ```
 3. Refresh your `.zshrc` after making the following change
 
+* Screenshot below shows autosuggest in action
+* When I type the <a href="https://www.computerhope.com/jargon/b/backquot.htm" target="_blank">backtick</a> it will type the rest of the autosuggest for me
+
+![IMG - autosuggest working](https://i.imgur.com/o7JWDJi.png)
+
 ### Add alias-tips Plugin
 * If you are using aliases and have a hard time remember your aliases this is the plugin for you, after you type the long version of a command, if you have an alias for that command it will let you know what it is
 * <a href="https://github.com/djui/alias-tips" target="_blank">Here are the docs for alias-tips</a> 

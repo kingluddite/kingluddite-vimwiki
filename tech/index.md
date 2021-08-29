@@ -1,6 +1,12 @@
 [#](#.md) Tech
 
 ## Editors
+[Know difference between Vi, Vim and Ex](./editors/vi.md)
+
+### Popular Editors
+[Atom](./editors/atom.md)
+[Nano](./editors/nano.md)
+[Notepad](./editors/notepad.md)
 [Nvim](./editors/nvim.md)
 [Sublime Text](./editors/sublime-text.md)
 [Tmux](./editors/tmux.md)
