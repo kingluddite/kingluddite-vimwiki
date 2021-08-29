@@ -49,7 +49,7 @@ Plug `mbbill/undotree`
 | `D`         | Toggle Diff mode                 | good to keep open        |
 | `T`         | Toggle Time mode short vs long   | good to keep open        |
 | `<ctrl-c>`  | Clear the undotree               | will ask you to confirm* |
-| `<alt-t>`   | Toggle undotree                  | custom key binding       |
+| `<ctrl-t>`  | Toggle undotree                  | custom key binding       |
 
 * `*` If you confirm clearing undotree you won't be able to redo
 
@@ -74,13 +74,13 @@ Plug `mbbill/undotree`
   
 ## Keybinding Your undotree
 * Prefer to work with toggle trees
-* **tip** Putting keys on <alt> keys is generally safer because most people don't put on the <alt>
+* Toggle it now with `<ctrl-t>`
 
 ```
 " MORE CODE
 
 " Undotree
-nnoremap <A-t> :UndotreeToggle<CR>
+nnoremap <c-t> :UndotreeToggle<CR>
 
 " MORE CODE
 ```
