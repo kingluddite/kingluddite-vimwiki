@@ -13,7 +13,11 @@
 [Vim](./editors/vim.md)
 [VS Code](./editors/vs-code.md)
 
+## Hosting
+[Netlify](./hosting/netlify.md)
+
 ## Tools
+[Git](./tools/git.md)
 [browsers](/tech/tools/browsers/index.md)
 [terminals](/tech/tools/terminals/index.md)
 databases
@@ -54,3 +58,5 @@ Lua
 [[Password Mgr]]
 [LastPass](./security/lastpass.md)
 
+## My Dev Lists
+[Recurring Problems](./my-dev-lists/recurring-problems.md)

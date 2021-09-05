@@ -20,3 +20,4 @@
 18. <a href="https://www.youtube.com/watch?v=0ik6X4DJKCc" target="_blank">Part 1 (of a 4 part series on learning the DOM)</a>
 19. <a href="https://www.udemy.com/course/understand-javascript/" target="_blank">JavaScript: Understanding the Weird Parts by Anthony Alicea (Udemy - free 3 hours on YouTube)</a>
 20. <a href="https://syntax.fm/" target="_blank">Great Web Dev Podcast</a>
+21. <a href="https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/" target="_blank">Step-by-step Deploy to Netlify</a>

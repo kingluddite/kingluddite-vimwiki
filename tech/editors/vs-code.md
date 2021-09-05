@@ -1,5 +1,8 @@
 # VS Code
 
+## Settings I like
+* Toggle Mini Map as screen realestate is important
+
 ## Plugins
 * [ES 7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 ## Issues

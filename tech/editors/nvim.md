@@ -1,7 +1,14 @@
 # Nvim
+[Spell Check](./spell-check.md)
 [Nvim inside VS Code](nvim-inside-vscode.md)
 [Keybindings](./nvim/.nvim-keybindings.md)
+[Modes](./nvim/modes/index.md)
 [Plugins](./nvim/plugins/index.md)
+
+## Key Translation
+* `<CR>` === `Enter`
+* `<C-b>` === `<ctrl>` + `b`
+* `<ctrl-b>` === `<ctrl>` + `b`
 
 ## Reload nvim
 * If you make changes you need to reload nvim with the Ex command `:source $MYVIMRC`
@@ -44,7 +51,6 @@ alias v="nvim"
 
 ### Usage
 `$ v`
-
 
 ## How can I open two files in separate windows from the terminal?
 `$ v -O blog-{classic,modular}/.projections.json`

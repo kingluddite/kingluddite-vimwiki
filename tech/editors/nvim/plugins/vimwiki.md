@@ -1,5 +1,10 @@
 # Vimwiki
 
+## Default vim that no longer work because I overwrote them 
+| binding      | action                                | notes                                             |
+|--------------|---------------------------------------|---------------------------------------------------|
+| `<leader>ww` | open vimwiki                          |                                                   |
+
 ## Setup
 * I made my vimwiki file a repo on Github <a href="https://github.com/kingluddite/kindluddite-vimwiki" target="_blank">My Vimwiki</a>
 * There are changes in Dropbox (mid 2019 Dropbox dropped it's support for symlinks that link to outside your Dropbox folder for performance reasons). The new way to sync up is below and I used it to sync my vimwiki with dropbox
