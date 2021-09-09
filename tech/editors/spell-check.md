@@ -1,25 +1,35 @@
 # Spell Check
 
-| binding | action                              | notes                                             |
-|---------|-------------------------------------|---------------------------------------------------|
-| `s]`    | go to next error                    |                                                   |
-| `[s`    | go to previous error                |                                                   |
-| `]S`    | only go to next bad words           | (not rare words, or words from other region)      |
-| `[S`    | only go to previous bad words       | (not rare words, or words from other region)      |
-| `z=`    | after locate word, find suggestions | (pick correct word by typing number + `<ENTER>`)  |
-| `zg`    | add word to spellfile               | these are non-words you use a lot                 |
-| `zug`   | remove word from spellfile          |                                                   |
-| `zw`    | add bad word                        |                                                   |
-| `zuw`   | add bad word                        |                                                   |
+| binding    | action                               | notes                                            |
+|------------|--------------------------------------|--------------------------------------------------|
+| `s]`       | go to next error                     |                                                  |
+| `[s`       | go to previous error                 |                                                  |
+| `]S`       | only go to next bad words            | (not rare words, or words from other region)     |
+| `[S`       | only go to previous bad words        | (not rare words, or words from other region)     |
+| `z=`       | after locate word, find suggestions  | (pick correct word by typing number + `<ENTER>`) |
+| `zg`       | add word to spellfile                | these are non-words you use a lot                |
+| `zug`      | remove word from spellfile           |                                                  |
+| `zw`       | add bad word                         |                                                  |
+| `zuw`      | add bad word                         |                                                  |
+| `<ctrl-n>` | select next word to autocomplete     | `Insert` mode                                    |
+| `<ctrl-p>` | select previous word to autocomplete | `Insert` mode                                    |
  
 * **note** Please read my notes on the [gruvbox](./nvim/plugins/themes/gruvbox.md) theme as it needs some configuration to get spell check working with it 
 ## How to enable Spell Check
 `:set spell`
 
+## Word Completion
+``````
+" let us press <ctrl-n> or <ctrl-p> in insert-mode to complete the word when
+"  are typing
+set complete+=kspell
+```
+
 ## How to set Spell Language
 * I use English
 
 `:set spell spelllang=en_us`
+
 
 ### Variations of English regions are:
 * en - all regions
@@ -66,8 +76,9 @@ TODO
 ## What is bg color of SpellBad?
 `:verbose highlight SpellBad` - If the `xxx` at the start of the line is not highlighted, then badly spelled words will not be highlighted, either
 
-
 ## Resources
-<a href="https://vi.stackexchange.com/questions/18295/how-to-set-a-colorscheme-that-still-shows-spelling-errors" target="_blank">Hot to set a colorscheme that still shows spelling errors?</a>
-<a href="https://ostechnix.com/use-spell-check-feature-vim-text-editor/" target="_blank">How to use spell check in Vim</a>
-<a href="https://ostechnix.com/use-spell-check-feature-vim-text-editor/" target="_blank"></a>
+* <a href="https://thoughtbot.com/blog/vim-spell-checking" target="_blank">Vim Spell-Checking</a>
+* <a href="http://vimdoc.sourceforge.net/htmldoc/spell.html" target="_blank">Online Vim Spell docs</a>
+* <a href="https://vi.stackexchange.com/questions/18295/how-to-set-a-colorscheme-that-still-shows-spelling-errors" target="_blank">Hot to set a colorscheme that still shows spelling errors?</a>
+* <a href="https://ostechnix.com/use-spell-check-feature-vim-text-editor/" target="_blank">How to use spell check in Vim</a>
+* <a href="https://ostechnix.com/use-spell-check-feature-vim-text-editor/" target="_blank"></a>

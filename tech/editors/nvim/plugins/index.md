@@ -9,6 +9,7 @@ E7 React Snippets
 [vim sneak](./vim-sneak.md)
 [vim commentary](./vim-commentary.md)
 [vim-proje/ctionist](./plugins/vim-projectionist.md)
+[vim surround](./plugins/vim-surround.md)
 [vim textobj entire](./vim-textobj-entire.md)
 [Vimwiki](./vimwiki.md)
 [visualrepeat](./visualrepeat.md)

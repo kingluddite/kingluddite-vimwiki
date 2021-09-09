@@ -1,4 +1,20 @@
-# Vi
+# History
+## ed
+* `ed` was the original Unix text editor (it was written when there were not many video displays)
+* source code was usually printed onto a roll of paper and edited on a teletype terminal
+* commands entered at the terminal would be sent to a mainframe computer for processing, and the output from each command would be printed
+* `ed` went through several generations of improvements including:
+  - `em` (dubbed the "editor for mortals")
+  - `en`
+  - And eventually `ex` when screens were more common
+    + You would enter `:visual` to enter screen-editing mode (`:vi` for short) and that is where `vi` came from
+* `Vim` stands for `Vi improved`
+
+## Vi
+* `Vi` is where the modal editing paradigm was conceived
+* `Vi` came from a line editor called `ex` (This is why we have `Ex` commands) 
+
+## Vi
 * `Vi` stands for Visual
   - It is a text editor that is an early attempt to a visual text editor
 

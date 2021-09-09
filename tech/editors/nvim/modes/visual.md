@@ -1,9 +1,50 @@
 # Visual Mode
+
+| Trigger | Effect                        |
+|---------|-------------------------------|
+| `<C-v>` | Enter `Visual Block` mode     |
+| `gv`    | Select last visual selection  |
+| `r`     | Replace                       |
+| `V`     | Visually select line          |
+| `yyp`   | Yank and put                  |
+| `e`     | End of word                   |
+| `c`     | Switch to `Insert` mode       |
+| `A`     | Append at the end of the line |
+| `$`     | Select to end of line         |
+
 ## Tips
 * If we want to set up the dot command so that it repeats something useful, then we're better off staying out of `Visual` mode
 
 ## General Rule
 * We should prefer operator commands over their `Visual` model equivalents
+
+## Change columns of text
+* We can use `Visual-Block` mode with code too
+  - If I want to change all the paths from `img` to `assets/img`
+  
+```
+<img href="img/one.jpg">
+<img href="img/two.jpg">
+<img href="img/three.jpg">
+```
+
+* To this
+
+```
+<img href="assets/img/one.jpg">
+<img href="assets/img/two.jpg">
+<img href="assets/img/three.jpg">
+```
+* I would:
+
+1. Start in `Normal` mode on and have curson over first `i` of `img`
+2. `<C-v>` to insert `Visual-Block` mode
+3. `jje` to move down twice and select to end of word `img`
+4. `c` to enter `Insert` mode
+5. Type new path of `assets/img`
+6. Enter `Normal` mode with `<Esc>`
+
+* Note you will only see first line of changes until you enter Normal mode with `<Esc>` which seems counterintuitive but you will get used to it with practice
 
 ### `vitU` vs `gUit` (thinking the Vim way)
 * Both have 4 keystrokes but their semantics are different

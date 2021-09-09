@@ -1,6 +1,8 @@
 # Nvim
 [Spell Check](./spell-check.md)
+[nvim FAQs](./nvim/vim-faqs.md)
 [Nvim inside VS Code](nvim-inside-vscode.md)
+[Jumplist](./nvim/jumplist.md)
 [Keybindings](./nvim/.nvim-keybindings.md)
 [Modes](./nvim/modes/index.md)
 [Plugins](./nvim/plugins/index.md)
@@ -9,6 +11,9 @@
 * `<CR>` === `Enter`
 * `<C-b>` === `<ctrl>` + `b`
 * `<ctrl-b>` === `<ctrl>` + `b`
+
+## My Tips
+* Disable arrow keys
 
 ## Reload nvim
 * If you make changes you need to reload nvim with the Ex command `:source $MYVIMRC`

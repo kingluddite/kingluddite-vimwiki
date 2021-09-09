@@ -104,7 +104,7 @@ Hello ENTER_STUDENT_NAME,
 
 I have provided feedback to your workshop #3 assignment below:
 
-task 1
+Task 1
 
 Removed the code related to the tooltip from the "Reserve Campsite" button in the jumbotron
 
@@ -118,9 +118,7 @@ Added the correct data-* attributes to activate the modal
 
 Used the id of #reserveModal to trigger the modal
 
-
-
-task 2
+Task 2
 
 Created reservation form modal
 
@@ -144,9 +142,7 @@ Gave cancel button the attribute of data-dismiss="modal" and used a Bootstrap cl
 
 Deleted any remaining code for the reservation form that was there
 
-
-
-task 3
+Task 3
 
 Added a radio button group to the reservation form inside the modal to allow the user to select between Tent and RV campsites 
 

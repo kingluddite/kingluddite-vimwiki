@@ -1,9 +1,6 @@
 [#](#.md) Tech
 
 ## Editors
-[Know difference between Vi, Vim and Ex](./editors/vi.md)
-
-### Popular Editors
 [Atom](./editors/atom.md)
 [Nano](./editors/nano.md)
 [Notepad](./editors/notepad.md)
@@ -17,19 +14,21 @@
 [Netlify](./hosting/netlify.md)
 
 ## Tools
-[Git](./tools/git.md)
 [browsers](/tech/tools/browsers/index.md)
-[terminals](/tech/tools/terminals/index.md)
-databases
 build tools
+databases
+[dotfiles](/tools/dotfiles.md)
+[Git](./tools/git.md)
 hosting
-WordPress
 [linting](./tools/linting/index.md)
-[typescript](./tools/typescript.md)
+[prettier](./tools/prettier.md)
+productivity
+[terminals](/tech/tools/terminals/index.md)
 Twitter Bootstrap
 security
-productivity
-[prettier](./tools/prettier.md)
+[top web troubleshooting tips](./top-web-troubleshooting-tips.md)
+[typescript](./tools/typescript.md)
+WordPress
 [zoom](./tools/zoom.md)
 
 ## Shells
@@ -60,3 +59,6 @@ Lua
 
 ## My Dev Lists
 [Recurring Problems](./my-dev-lists/recurring-problems.md)
+
+## Resources
+[Know difference between Vi, Vim and Ex](./editors/vi.md)
