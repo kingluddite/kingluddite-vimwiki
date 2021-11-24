@@ -21,3 +21,9 @@
 <a href="https://keep.google.com/" target="_blank">Google Keep</a> 
 Spectacle - Deprecated - I use [Rectangle](./macos/productivity/rectangle.md)
 [Rectangle](./macos/productivity/rectangle.md)
+
+# My Favorite Mac Terminal Commands
+
+| key binding                     | action                                    | notes |
+|---------------------------------|-------------------------------------------|-------|
+| `$ alias`                       | list all aliases                          |       |

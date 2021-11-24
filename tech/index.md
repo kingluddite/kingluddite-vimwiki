@@ -19,6 +19,7 @@ build tools
 databases
 [dotfiles](/tools/dotfiles.md)
 [Git](./tools/git.md)
+[GitHub](./tools/github.md)
 hosting
 [linting](./tools/linting/index.md)
 [prettier](./tools/prettier.md)
@@ -47,6 +48,10 @@ JavaScript
 SQL
 Markdown
 Lua
+
+## Frameworks
+[React](./frameworks/React.md)
+[Gatsby](./frameworks/gatsby.md)
 
 ## Security
 [[Okta]]

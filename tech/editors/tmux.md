@@ -1,6 +1,4 @@
 # tmux
-
-[Buffers](./tmux/buffers.md)
 [Copy Mode](./tmux/copy-mode.md)
 [Panes](./tmux/panes.md)
 [Sessions](./tmux/sessions.md)

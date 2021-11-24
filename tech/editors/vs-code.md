@@ -10,6 +10,7 @@
 * Hide side bar (search for 'activity bar') and uncheck `Workbench > Activity Bar: Visible`
 * code > keyboard shortcuts > format document (shift + option + F) (i just use autoformat on save)
 * set default formatter to Prettier
+* View > Appearance (You can hide things like the status bar at bottom)
 
 ## Theme ideas
 * Theme Solarized light (too bright)

@@ -1,16 +1,19 @@
 # Nvim
-[Spell Check](./spell-check.md)
+[buffers](./nvim/buffers.md)
+[command-line (CLI)](./nvim/command-line.md)
+[jumplist](./nvim/jumplist.md)
+[keybindings](./nvim/.nvim-keybindings.md)
+[modes](./nvim/modes/index.md)
+[motions](./nvim/motions.md)
+[my key translation](./nvim/my-key-translation.md)
 [nvim FAQs](./nvim/vim-faqs.md)
-[Nvim inside VS Code](nvim-inside-vscode.md)
-[Jumplist](./nvim/jumplist.md)
-[Keybindings](./nvim/.nvim-keybindings.md)
-[Modes](./nvim/modes/index.md)
-[Plugins](./nvim/plugins/index.md)
+[nvim inside VS Code](nvim-inside-vscode.md)
+[plugins](./nvim/plugins/index.md)
+[spell check](./spell-check.md)
 
-## Key Translation
-* `<CR>` === `Enter`
-* `<C-b>` === `<ctrl>` + `b`
-* `<ctrl-b>` === `<ctrl>` + `b`
+## help
+* Just use `:h(elp)` + `term you want to look up`
+* Quit help with `:q`
 
 ## My Tips
 * Disable arrow keys

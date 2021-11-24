@@ -3,8 +3,12 @@
 
 | key binding | action                  | note |
 |-------------|-------------------------|------|
-| `ds{`      | delete surrounding `{}` |      |
-| `cs"`      | delete surrounding `{}` |      |
+| `ds{`       | delete surrounding `{}` |      |
+| `ysiw{`     | add `{}` around word    |      |
+
+* **TIP** Below helps me understand vim surround:
+
+`cs"' or cs'" -> change surroundings <from> - <to>`
 
 ## Resources
 <a href="https://github.com/tpope/vim-surround" target="_blank">vim-surround docs</a>

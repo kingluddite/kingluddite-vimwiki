@@ -19,7 +19,22 @@
 ### Resources
 * <a href="https://stackoverflow.com/questions/62240589/tell-sublime-text-3-to-always-default-to-word-wrap-column-automatic" target="_blank">tell-sublime-text-3-to-always-default-to-word-wrap-column-automatic</a>
 
-## My default settings
+* cmd + shift + p opens the pallatte
+	* install a package `package install` then choose a name
+	
+## My setting preferencess
+* Choose a theme with MarkdownPreview
+* Add line numbers and a gutter to settings:
+
+```
+// MORE CODE
+
+"gutter": true,
+"line_numbers": true,
+	
+// MORE CODE
+```
+
 `Sublime Text > Preferences > Settings` (`<cmd-,>`)
 
 `Preferences.sublime-settings`

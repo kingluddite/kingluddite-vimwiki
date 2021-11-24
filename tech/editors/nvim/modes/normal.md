@@ -10,22 +10,42 @@
 ## Operator + Motion = Action
 * Vim's grammer rule
   * When an operator command is invoked in duplicate, it actions upon the current line 
-| Trigger | Effect                                            |
-|---------|---------------------------------------------------|
-| `c`     | Change                                            |
-| `d`     | Delete                                            |
-| `dap`   | Delete around paragraph                           |
-| `dd`    | Delete current line                               |
-| `>>`    | Indent current line                               |
-| `y`     | Yank into register                                |
-| `g~`    | Swap case                                         |
-| `gu`    | Make lowercase                                    |
-| `gU`    | Make uppercase                                    |
-| `gUgU`  | Make current line uppercase                       |
-| `gUU`   | Make current line uppercase                       |
-| `gUaw`  | Make word uppercase (aka SHOUTY case)             |
-| `gUap`  | Make paragraph SHOUTY case                       |
-| `>`     | Shift right                                       |
-| `<`     | Shift left                                        |
-| `=`     | Autoindent                                        |
-| `!`     | Filter {motion} lines through an external program |
+  
+### Everthing to do with Case
+| Trigger    | Effect                                             |
+|------------|----------------------------------------------------|
+| `g~`       | Swap case                                          |
+| `~`        | Changes the case of the current character          |
+| `guu`      | Changes current line from upper to lower           |
+| `gUU`      | Make current line uppercase                        |
+| `guw`      | Change the end of current WORD from upper to lower |
+| `guaw`     | Change all of the current WORD to lower            |
+| `gUw`      | Change to end of current WORD from lower to upper  |
+| `gUaw`     | Make word uppercase (aka SHOUTY case)              |
+| `g~~`      | Invert case to entire line                         |
+| `g~w`      | Invert case to current WORD                        |
+| `guG`      | Change to lowercase until the end of document      |
+| `gu`       | Make lowercase                                     |
+| `gU)`      | Change until end of sentence to upper case         |
+| `gu}`      | Change to end of paragraph to lower case           |
+| `gU5j`     | Change 5 lines below to upper case                 |
+| `gu3`      | Change 3 lines above to lower case                 |
+| `gU`       | Make uppercase                                     |
+| `gUgU`     | Make current line uppercase                        |
+| `gUap`     | Make paragraph SHOUTY case                         |
+| `}`        | Go to next empty line                              |
+
+## Other useful commands
+| Trigger    | Effect                                             |
+|------------|----------------------------------------------------|
+| `c`        | Change                                             |
+| `d`        | Delete                                             |
+| `dap`      | Delete around paragraph                            |
+| `dd`       | Delete current line                                |
+| `>>`       | Indent current line                                |
+| `:History: | Search through Vim's command history               |
+| `y`        | Yank into register                                 |
+| `>`        | Shift right                                        |
+| `<`        | Shift left                                         |
+| `=`        | Autoindent                                         |
+| `!`        | Filter {motion} lines through an external program  |

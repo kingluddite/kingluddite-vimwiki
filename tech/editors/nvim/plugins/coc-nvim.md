@@ -10,6 +10,9 @@ Plug 'neoclide/coc.nvim'
 `:PlugInstall`
 
 ## Troubleshooting
+## If you get strange errors you need to restart coc with:
+`:CocRes`
+
 ### Problem `.tsx` file not formatting
 * `.tsx` files have the correct typescript.tsx filetype, but do not format on save
 

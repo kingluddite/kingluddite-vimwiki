@@ -1,16 +1,20 @@
 # Nvim Plugins
 [Adding Markdown](./adding-markdown.md)
+[better escape](./better-escape.md)
 [coc.nvim](./coc-nvim.md)
 [CtrlP](./ctrlp.md)
 E7 React Snippets
 [fzf](./fzf.md)
 [Nerdtree](./nerdtree.md)
+[ultisnips](./ultisnips.md)
 [undotree](./undotree.md)
 [vim sneak](./vim-sneak.md)
 [vim commentary](./vim-commentary.md)
+vim-fugitive
 [vim-proje/ctionist](./plugins/vim-projectionist.md)
-[vim surround](./plugins/vim-surround.md)
+[vim surround](./vim-surround.md)
 [vim textobj entire](./vim-textobj-entire.md)
+[vim unimpaired](vim-unimpaired.md)
 [Vimwiki](./vimwiki.md)
 [visualrepeat](./visualrepeat.md)
 

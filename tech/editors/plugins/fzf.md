@@ -2,6 +2,9 @@
 ## What does it do?
 Finding files using fuzzy path matching
 
+## Search Ex command history
+`:History:`
+
 ## Install with VimPlug
 `.vimrc`
 

@@ -67,3 +67,46 @@ autocmd FileType markdown set indentexpr=
 ```
 
 * Then refresh nvim with `:source $MYVIMRC`
+
+## Getting Markdown to work with Ultisnips 
+* I following <a href="https://jdhao.github.io/2019/01/15/markdown_edit_preview_nvim/" target="_blank">This tutorial</a> and when I tried to use `<tab>` i found the tab was being using by vimwiki and <a href="https://github.com/vimwiki/vimwiki/issues/357" target="_blank">This issue gave me the solution</a> which was to make my `vimwiki plugin settings` look like this: 
+  
+`/.config/nvim/plugin-config/vimwiki.vim`
+
+  ```
+  let g:vimwiki_list = [{'path':'~/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
+  let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+
+  " makes vimwiki markdown links as [text](text.md) instead of [text](text)
+  let g:vimwiki_markdown_link_ext = 1
+
+  let g:taskwiki_markup_syntax = 'markdown'
+  let g:markdown_folding = 1
+
+  " I was having problems with ultisnips playing nice with vimwiki because of tab
+  " This shows the issue and solution - https://github.com/vimwiki/vimwiki/issues/357
+  let g:vimwiki_global_ext = 0
+  let g:vimwiki_key_mappings = { 'table_mappings': 0 }
+  ```
+
+* I added these two plugins:
+
+```
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+```
+
+* I added this to my ultipsnips config 
+  
+  
+  ```
+  " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+  let g:UltiSnipsExpandTrigger="<tab>"  " use <Tab> to trigger autocompletion
+  let g:UltiSnipsJumpForwardTrigger="<c-j>"
+  let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+  ```
+
+* And now when I type in a markdown file `link` + `<tab>` it gives me the snippet `[Text](http://www.url.com)` 
+  
+## resources
+https://jdhao.github.io/2019/01/15/markdown_edit_preview_nvim/

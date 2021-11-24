@@ -15,6 +15,7 @@
 | `<ctrl-p>` | select previous word to autocomplete | `Insert` mode                                    |
  
 * **note** Please read my notes on the [gruvbox](./nvim/plugins/themes/gruvbox.md) theme as it needs some configuration to get spell check working with it 
+
 ## How to enable Spell Check
 `:set spell`
 
