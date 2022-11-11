@@ -56,6 +56,10 @@ alias v="nvim"
 
 // MORE CODE
 ```
+## What if I get `E21: Cannot make changes, 'Modifiable' is off`? error
+* I was using nvimtree and tried to delete a bunch of files inside the folder and it wouldn't let me and gave me the above error
+* The solution was easy and it was to type: `:set ma` (which is short for `:set modifiable`)
+* After that setting I can quickly delete all the files folders I want quickly
 
 ### Usage
 `$ v`

@@ -29,6 +29,9 @@ The Prefix is huge in Tmux. This is the key you press before pressing another ke
 
 ## High level key bindings for Tmux commands
 * [Resurrect](https://github.com/tmux-plugins/tmux-resurrect) is a Tmux plugin
+  * I recommend using Lua and packer to install this plugin
+  * Once the lines are added to your nvim config you can install the plugin with `prefix + I` (note: that is a capital 'I')
+  * Once installed you can save Tmux sessions with `prefix + <C-s>` and resurrect tmux sessions with `prefix + <C-r>`
 
 | binding           | action                   | notes                                                                  |
 |-------------------|--------------------------|------------------------------------------------------------------------|
@@ -36,8 +39,8 @@ The Prefix is huge in Tmux. This is the key you press before pressing another ke
 | `Prefix + r`      | Reload Tmux config       |                                                                        |
 | `$ tmux`          | start Tmux               |                                                                        |
 | `$ killall tmux`  | kill all Tmux servers    |                                                                        |
-| `Prefix <Ctrl-r>` | resurrect Tmux sessions  | even if you turn computer off this will restore all your Tmux sessions |
-| `Prefix <Ctrl-s>` | save Tmux sessions       | save all your Tmux sessions                                            |
+| `Prefix <C-r>` | resurrect Tmux sessions  | even if you turn computer off this will restore all your Tmux sessions |
+| `Prefix <C-s>` | save Tmux sessions       | save all your Tmux sessions                                            |
 
 ## Adding ruby for tmuxinator
 * `tmuxinator` <a href="https://github.com/guyhughes/tmuxinator" target="_blank">tmuxinator docs</a> is a simple tool you can use to define and manage different tmux configurations
@@ -69,6 +72,18 @@ $ ruby -v
 
 `$ gem install tmuxinator`
 
+## Troubleshooting
+* ran into a strange problem with typing a character in tmux and many characters would be typed. It made tmux almost unusable - to fix it I used this tip - https://github.com/microsoft/WSL/issues/5931 and set escape-time from 0 to 50 milleseconds
+
+```
+When your .tmux.conf has the line set -sg escape-time 0, it happens.
+
+But if I add the line set -sg escape-time 0 (I'm on Mac M1) The strange characters appear. I think it is because of the 0s. Finally I change it to 50ms (500ms default).
+```
+- this fixed it for me (and refreshing tmux)
+* [ref](https://github.com/microsoft/WSL/issues/5931)
+
+## How can I access the tmux session list shortcuts like (M-a) - [see kitty](../tools/terminals/kitty.md)
 ## Resources
 ### cheatsheets
 https://tmuxcheatsheet.com/

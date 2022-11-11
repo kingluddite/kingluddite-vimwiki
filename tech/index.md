@@ -44,10 +44,10 @@ linux
 ## Languages
 HTML
 CSS
-JavaScript
+[JavaScript](./languages/javascript.md)
 SQL
 Markdown
-Lua
+[Lua](Lua)
 
 ## Frameworks
 [React](./frameworks/React.md)
@@ -64,6 +64,9 @@ Lua
 
 ## My Dev Lists
 [Recurring Problems](./my-dev-lists/recurring-problems.md)
+
+## Tutorials
+[Tutorials](./tutorials/index.md)
 
 ## Resources
 [Know difference between Vi, Vim and Ex](./editors/vi.md)

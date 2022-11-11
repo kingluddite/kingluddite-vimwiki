@@ -1,4 +1,8 @@
 # GitHub
+## App to delete GitHub repos quickly
+* https://reporemover.xyz/details
+
+## Problem
 * You are trying to push a HTTPS GitHub repo and you get permission denied error
 
 ```

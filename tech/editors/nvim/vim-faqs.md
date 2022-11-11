@@ -1,4 +1,13 @@
 # NVIM FAQs
+## How do I vertically select the column
+* I want to capitalize 10 lines of code
+
+`C-v` over the first line, first character and type `j` to highlight the next line below and repeat as needed
+
+## How can i wrap long lines?
+1. highlight range to wrap
+2. `gq`
+
 ## How can I quickly create lots of folders?
 `$ mkdir section-{03,04,05,07,08,09,10,11,12,13,14,15,16,17,18}`
 

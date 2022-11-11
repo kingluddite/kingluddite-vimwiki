@@ -1,5 +1,116 @@
 # Git
 
+eval $(ssh-agent)
+ssh-add ~/.ssh/id_rsa_work
+* i have to ssh-add each time for a directory
+`$ ssh -T git@github.com-work`
+
+## can't log in with password
+Message "Support for password authentication was removed. Please use a personal access token instead."
+
+* So go to settings > developer settings > generate new token (i did classic for now as the other is in beta)
+* Save the token and use that to log in, if you forget it, and don't save it you'll need to keep generating new one's. i didn't add an expiration date but it is recommended
+* now you should be able to clone the repo
+
+## Multiple SSH keys
+
+### lots of issues with this
+* my config seems to default to mypersonalgit even with
+in `~/.ssh/config
+
+```
+Host *
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_ed25519
+
+# work github account: work 
+Host github.com-work
+    HostName github.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_rsa_work
+```
+
+* I think it is that wildcard that just makes it for everything
+* but if I comment it out and then run this
+
+```
+# Default github account: kingluddite
+# Host *
+#   AddKeysToAgent yes
+#   IdentityFile ~/.ssh/id_ed25519
+```
+
+* and run `$ eval $(ssh-agent)` followed by
+
+ `$ ssh -T git@github.com-work` i get my log in 
+
+* so if i do this to my config TODO!!!
+
+## Which github user are you logged into?
+ssh -T git@github.com (for personal)
+ssh -T git@github.com-work (for work)
+if you get a welcome all is good and you can add commit and push pull
+
+one ssh is very straighforward and the github link is all you need
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+
+Generate Second SSH Key
+
+ssh-keygen -t rsa -f ".ssh/id_rsa_work" -C "example@work.tech"
+
+Register New Key with SSH Agent
+Next, add the SSH key to the SSH agent. The SSH agent manages your SSH key and remembers your passphrase, so you don’t have to reenter it each you use your SSH key. First, ensure the SSH agent is running using the eval command, then use the ssh-add command and specify the file name created in the previous step (~/.ssh/id_rsa_work).
+
+eval $(ssh-agent)
+ssh-add ~/.ssh/id_rsa_work
+
+Add SSH Key to Second GitHub Account
+
+https://jeffbrown.tech/multiple-github-accounts-ssh/
+https://stackoverflow.com/questions/3225862/multiple-github-accounts-ssh-config
+
+Create an SSH Config File
+With both sets of SSH keys created and added to different GitHub accounts, how does Git know when the correct credentials? The answer is an SSH config file. The SSH config file sets configuration rules that specify when to use each account. You set the credentials based on the domain name.
+
+touch ~/.ssh/config
+
+Create profiles that specify when to use each identity or SSH key in the config file. The profiles should include:
+
+Host: The host name from the Git URL used to clone the repo.
+HostName: The real host name used to log in to. Since this tutorial uses GitHub, the host name here will be GitHub.com.
+User: User ID, which will be git.
+IdentityFile: Path to the SSH public key file to use for authentication.
+
+but if you need multiple github users on your local computer there's a few more steps involved
+
+this link helps - https://stackoverflow.com/questions/3225862/multiple-github-accounts-ssh-config
+
+your work profile won't work without adding it using
+
+ssh-add ~/.ssh/work_rsa
+
+~/.ssh/config (this is a file)
+Default github account: personal
+Host *
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_ed25519
+
+# 2u work github account: work
+Host github.com-work
+    HostName github.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_rsa_work
+
+### don't forget this part when cloning repos!!!
+The real fun beings when cloning repositories. Using the example config file above, you use the same repository URL if you are cloning a repository from your work GitHub. 
+
+git@github.com:mypersonal/example.git
+
+However, to clone a repository using the personal profile from the config file, you need to change the hostname in the clone URL to match the hostname in the config file. 
+
+git@github.com-work:mywork/other-repo-example.git
+
 ## Patch
 * This is a great way to break up commits into logical chunks
 You can use git add --patch <filename> (or -p for short), and git will begin to break down your file into what it thinks are sensible "hunks" (portions of the file). It will then prompt you with this question:
@@ -94,6 +205,20 @@ function gi() { curl -sLw "\n" https://www.gitignore.io/api/\$@ ;}
 
 ## Troubleshooting
 
+### I want to use git checkout -- . but a file is not removed
+* Try:
+
+`$ git clean -fd`
+
+Use of Git Clean command is as follows: 
+```
+$ git clean -n: to dry run.
+$ git clean -f: forcefully file deletion.
+$ git clean -f -x: delete .gitignore files
+$ git clean -f -d: delete the untracked directories.
+```
+
+* [resource](https://www.geeksforgeeks.org/git-clean/#:~:text=The%20Git%20Clean%20command%20is,is%20very%20helpful%20to%20them.)
 ### If you accidentilly tracked `node_modules`
 * You should never see `node_modules` in your git history, if you do this is how you fix it
 
@@ -101,4 +226,17 @@ function gi() { curl -sLw "\n" https://www.gitignore.io/api/\$@ ;}
 
 * But that doesn't remove `node_modules` from Git history. <a href="https://stackoverflow.com/questions/10067848/remove-folder-and-its-contents-from-git-githubs-history" target="_blank">This solution does just that</a>
 
-### How can I remove a file with sens
+## How do I discard unstaged changes in Git?
+* **note** `git restore` was introduced in 2019
+* You can now discard unstaged changes in one tracked file with:
+
+`$ git restore <file>`
+
+* And in all tracked files in the current directory (recursively) with:
+
+`$ git restore .`
+
+* If you run the latter from the root of the repository, it will discard unstaged changes in all tracked files in the project
+* git restore was introduced in July 2019 and released in version 2.23 as part of a split of the git checkout command into git restore for files and git switch for branches
+* git checkout still behaves as it used to
+* As with `$ git checkout -- .`, this only discards changes in tracked files - But if you want to discard all unstaged changes, including untracked files, you could run, an additional `$ git clean -df`

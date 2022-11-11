@@ -1,6 +1,9 @@
 # Sublime Text
 * I primarily use Sublime Text for note taking in `markdown`
 
+## Not Happy
+I bought a lifetime Sublime Text and loved it but they came out with a new Sublime Text version and said I had to upgrade and pay for the new version - I am staying at the last version I paid for under the promise of lifetime and will not upgrade because I find "bait and switch" techniques dishonest
+
 ## Tell Sublime Text 3 to always default to "Word Wrap Column: Automatic"
 * It won't work if you just put it in preferences
 * You need to open the markdown file (I use sublime for markdown) and then Preferences > Settings - Syntax Specific, then add these rules
