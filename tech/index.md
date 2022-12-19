@@ -64,7 +64,8 @@ Markdown
 
 ## My Dev Lists
 [Recurring Problems](./my-dev-lists/recurring-problems.md)
-
+[My Keyboard Shortcuts](my-keyboard-shortcuts/index.md)
+[moonlander blastoff](moonlander-blastoff/index.md)
 ## Tutorials
 [Tutorials](./tutorials/index.md)
 
