@@ -10,7 +10,7 @@
 [nvim inside VS Code](nvim-inside-vscode.md)
 [plugins](./nvim/plugins/index.md)
 [spell check](./spell-check.md)
-
+[0 to LSP: Neovim RC from Scratch](0 to LSP: Neovim RC from Scratch)
 ## help
 * Just use `:h(elp)` + `term you want to look up`
 * Quit help with `:q`
