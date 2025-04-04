@@ -7,6 +7,9 @@
 ## What is tmux?
 * tmux is a terminal multiplexer. It lets you use a single environment to launch multiple terminals, or windows, each running its own process or program
 
+## I want to add this test and delete it later
+Delete this!
+
 ## Explaining the key bindings
 * `<Ctrl-b>` means "press the `Ctrl` and `b` keys simultaneously"
 * `<Ctrl-R>` means "press the `Ctrl` and `R` (holding `<Shift>` key down) keys simultaneously"
